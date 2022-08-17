@@ -1,1 +1,1 @@
-console.log("Hey! I'm working!");
+(()=>{"use strict";document.querySelector(".content").append((()=>{const e=document.createElement("section");return e.classList.add("home-section"),e.append((()=>{const e=document.createElement("div");e.classList.add("home__logo-box");const t=document.createElement("h1");e.classList.add("logo-box__title"),t.innerText="Welcome to the Gothic Restaurant!";const n=document.createElement("p");return e.classList.add("logo-box__subtitle"),n.innerText="The best restaurant in the World",e.append(t),e.append(n),e})()),e})())})();
