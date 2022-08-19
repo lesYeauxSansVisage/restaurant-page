@@ -12,12 +12,12 @@ const homeLogoBox = () => {
   textBox.classList.add("home__logo-box");
 
   const textBoxH1 = document.createElement("h1");
-  textBox.classList.add("logo-box__title");
-  textBoxH1.innerText = "Welcome to the Gothic Restaurant!";
+  textBoxH1.classList.add("logo-box__title");
+  textBoxH1.innerHTML = "Welcome to the <br /><span>Gothic Restaurant!</span>";
 
   const textBoxSubtitle = document.createElement("p");
-  textBox.classList.add("logo-box__subtitle");
-  textBoxSubtitle.innerText = "The best restaurant in the World";
+  textBoxSubtitle.classList.add("logo-box__subtitle");
+  textBoxSubtitle.innerText = "The best restaurant in the World!";
 
   textBox.append(textBoxH1);
   textBox.append(textBoxSubtitle);

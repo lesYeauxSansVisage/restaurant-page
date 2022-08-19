@@ -45,6 +45,16 @@ body {
   color: var(--font-color);
 }
 
+.main-header__logo {
+  height: 3rem;
+  width: 3rem;
+  cursor: pointer;
+}
+
+.main-header__logo img {
+  height: 100%;
+}
+
 .main-header__nav ul {
   display: flex;
   gap: 10px;
