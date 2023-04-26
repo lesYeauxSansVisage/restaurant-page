@@ -1,0 +1,41 @@
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1rem 2rem;
+
+  background-color: transparent;
+  color: $font-color;
+
+  &__logo {
+    height: 6rem;
+    width: 6rem;
+
+    cursor: pointer;
+  }
+
+  &__logo img {
+    height: 100%;
+  }
+
+  &__nav ul {
+    display: flex;
+    gap: 15px;
+
+    list-style: none;
+
+    & li a {
+      text-decoration: none;
+      color: inherit;
+
+      font-size: 2rem;
+
+      transition: color 0.4s ease;
+
+      &:hover {
+        color: $tertiary-color;
+      }
+    }
+  }
+}
