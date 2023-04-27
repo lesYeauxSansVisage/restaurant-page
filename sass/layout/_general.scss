@@ -1,0 +1,23 @@
+body {
+  min-height: 100vh;
+
+  background-color: $color-black-1;
+}
+
+.background {
+  height: 100vh;
+  width: 100vw;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  background-image: radial-gradient(circle,
+      rgba($color-black, 0.9) 0%,
+      rgba($color-black-1, 0.9) 40%),
+    url("../dist/img/gothic-1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
