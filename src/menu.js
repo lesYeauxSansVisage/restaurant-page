@@ -35,18 +35,38 @@ const loadMenuPage = () => {
   menuSection.append(menuTitle);
 
   const menuGrid = document.createElement("div");
-  menuGrid.classList.add("menu__items-grid");
+  menuGrid.classList.add("menu-grid");
   menuSection.append(menuGrid);
 
-  menuInfo.forEach((item) => {
-    const itemEl = createMenuItem(item);
-    menuGrid.append(itemEl);
-  });
+  createRows(2, menuGrid);
 
   return menuSection;
 };
 
+function createRows(quantity, element) {
+  const items = menuInfo.slice();
+  const menuGrid = document.querySelector('.menu-grid');
+
+  console.log(menuGrid);
+
+  for (let i = 0; i < quantity; i++) {
+    const rowItems = items.splice(0, quantity);
+    const row = document.createElement('div');
+    row.classList.add('row');
+    rowItems.forEach((item) => {
+      const itemEl = createMenuItem(item);
+      row.append(itemEl);
+    });
+
+    element.append(row)
+  }
+}
+
+
+
 function createMenuItem(item) {
+  const gridItem = document.createElement('div');
+  gridItem.classList.add('col-2-of-4')
   const menuItem = document.createElement("div");
   menuItem.classList.add("menu-item");
 
@@ -61,7 +81,9 @@ function createMenuItem(item) {
     </div>
   `;
 
-  return menuItem;
+  gridItem.append(menuItem)
+
+  return gridItem;
 }
 
 export default loadMenuPage;
