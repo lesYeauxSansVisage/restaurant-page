@@ -1,8 +1,13 @@
-@import "abstract/mixins";
 @import "abstract/variables";
+@import "abstract/mixins";
 
 @import "base/base";
 @import "base/typography";
 
 @import "layout/general";
 @import "layout/grid";
+@import "layout/navigation";
+
+@import "pages/about";
+@import "pages/homepage";
+@import "pages/menu";
