@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.heading-primary {
+  font-size: 6rem;
+  font-weight: 700;
+  text-align: center;
+  color: $font-color;
+
+  & span {
+    display: block;
+    color: $main-color;
+    font-weight: 700;
+  }
+
+  &--subtitle {
+    font-size: 3rem;
+    text-align: center;
+    font-style: italic;
+    color: $font-color;
+    letter-spacing: 0.25rem;
+    margin-top: 1rem;
+  }
+}
