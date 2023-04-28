@@ -5,10 +5,17 @@
     padding-bottom: 3rem;
 }
 
+
+
 .menu {
+    &-grid {
+        padding: 2rem;
+    }
+
     &__title {
         font-size: 4rem;
         font-weight: 700;
+        margin-top: 4rem;
         margin-bottom: 5rem;
     }
 
